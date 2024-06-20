@@ -14,7 +14,7 @@ pipeline {
         }
         stage('deploy'){
             steps {
-                deploy adapters: [tomcat9(credentialsId: 'tomcatcred', path: '', url: 'http://34.227.73.213:8081')], contextPath: '12books', war: '**/*.war'
+                deploy adapters: [tomcat9(credentialsId: 'tomcatcred', path: '', url: 'http://52.91.71.175:8090')], contextPath: 'bookstore', war: '**/*.war'
             }
         }
     }
